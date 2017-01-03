@@ -2,7 +2,7 @@
   "name": "ReqBot",
   "version": "0.0.0",
   "description": "ATS ME Request Fulfilment bot",
-  "main": "reqbot.js",
+  "main": "server.js",
   "scripts": {
     "test": ""
   },

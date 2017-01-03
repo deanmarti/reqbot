@@ -1,0 +1,24 @@
+{
+  "name": "ReqBot",
+  "version": "0.0.0",
+  "description": "ATS ME Request Fulfilment bot",
+  "main": "reqbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DeM",
+  "license": "proprietary",
+  "dependencies": {
+    "babyparse": "^0.4.6",
+    "botbuilder": "~3.4.4",
+    "csvtojson": "^1.1.1",
+    "fs": "0.0.1-security",
+    "json": "^9.0.4",
+    "papaparse": "^4.1.2",
+    "reader": "0.0.8",
+    "readline": "^1.3.0",
+    "recastai": "^2.3.0",
+    "request": "^2.79.0",
+    "restify": "~4.3.0"
+  }
+}

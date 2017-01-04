@@ -8,6 +8,7 @@ const getGoodbyes = require('./intents/goodbyes.js')
 const getGreetings = require('./intents/greetings.js')
 const getHelp = require('./intents/help.js')
 const getReqStatus = require('./intents/reqstatus.js')
+const getReqNew =  require('./intents/reqnew.js')
 
 // Connection to Recast.ai
 const recastClient = new recast.Client(config.recast)
@@ -26,9 +27,10 @@ const INTENTS = {
   feelings: getFeelings,
   goodbyes: getGoodbyes,
   greetings: getGreetings,
-  help: getHelp,
   reqstatus: getReqStatus,
-}
+  reqnew: getReqNew,
+  help: getHelp,
+  }
 
 // Event when Message received
 bot.dialog('/', (session) => {
@@ -36,15 +38,26 @@ bot.dialog('/', (session) => {
    .then(res => {
     const intent = res.intent()
     const entity = res.get('request_number')
-//  session.send(`Intent: ${intent.slug}`)
-//   session.send(`Entity: ${entity.name}`)
-  console.log(session.message.text)
-  console.log(`Intent: ${intent.slug}`) 
-  if (intent) {
-  session.send(INTENTS[intent.slug](entity))
- }
- })
-  .catch(() => session.send('Sorry I didn\'t get that. \n\nI can provide you information regarding your ongoing Requests. What can I do for you today?\n\nPS: I only speak english for now.'))
+
+    console.log(`UserName: ${session.message.user.name}`)
+    console.log(`Msg: ${session.message.text}`)
+    console.log(`Intent: ${intent.slug}`) 
+
+  // test re reqstatus_adv.js
+  //  if (intent.slug == 'reqstatus') {
+  //      console.log("reqstatus call")
+  //      getReqStatus(entity).then(function(res) { console.log(res); });
+   //     .then(res => session.send(res)) 
+   //     .catch(err => session.send(err))
+  //  }
+
+    if (intent) {
+        INTENTS[intent.slug](entity)
+        .then(res => session.send(res)) 
+        .catch(err => session.send(err))
+    }
+    })
+    .catch(() => session.send('Sorry I didn\'t get that. \n\nI can provide you information regarding your ongoing Requests (please include the RQ Number) or help you to create a new one.\n\nPS: I only speak English for now.'))
 })
 
 // Server Init

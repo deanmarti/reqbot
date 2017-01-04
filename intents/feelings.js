@@ -1,11 +1,12 @@
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const getFeelings = () => {
   const answers = [
-    'I\'m very good thank you. What about you? ',
-    'Marvelouse thanks, you?.',
-    'Living the dream. What about you?',
-    'Fine thanks, how are you?',
+    'I\'m very good thank you. What can I do for you? ',
+    'Marvelouse thanks, what can I do for you? ?.',
+    'Living the dream. What can I do for you? ',
+    'Fine thanks, what can I do for you? ',
+    'Busy answering questions :-), what can I do for you? ',
     ]
-  return random(answers)
+  return Promise.resolve(random(answers))
 }
 module.exports = getFeelings

@@ -6,6 +6,6 @@ const getGoodbyes = () => {
     'Always happy to help, cheers.',
     'See you soon, bye',
   ]
-  return random(answers)
+  return Promise.resolve(random(answers))
 }
 module.exports = getGoodbyes

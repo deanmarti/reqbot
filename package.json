@@ -2,20 +2,23 @@
   "name": "ReqBot",
   "version": "0.0.0",
   "description": "ATS ME Request Fulfilment bot",
-  "main": "reqbot.js",
+  "main": "server.js",
   "scripts": {
     "test": ""
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/deanmarti/reqbot.git"
   },
   "author": "DeM",
   "license": "proprietary",
   "dependencies": {
-    "babyparse": "^0.4.6",
+    "restify": "~4.3.0",
     "botbuilder": "~3.4.4",
     "recastai": "^2.3.0",
-    "restify": "~4.3.0"
+    "request": "^2.79.0",
+    "stream": "0.0.2"
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
   }
 }

@@ -17,7 +17,7 @@
     "botbuilder": "~3.4.4",
     "recastai": "^2.3.0",
     "request": "^2.79.0",
-    "stream": "0.0.2"
+    "stream": "0.0.2",
     "fs": "0.0.1-security",
     "http": "0.0.0",
   }

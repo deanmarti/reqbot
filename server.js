@@ -55,9 +55,11 @@ bot.dialog('/', (session) => {
         INTENTS[intent.slug](entity)
         .then(res => session.send(res)) 
         .catch(err => session.send(err))
+        console.log(`BotResp: ${res}`) 
     }
     })
     .catch(() => session.send('Sorry I didn\'t get that. \n\nI can provide you information regarding your ongoing Requests (please include the RQ Number) or help you to create a new one.\n\nPS: I only speak English for now.'))
+    
 })
 
 // Server Init

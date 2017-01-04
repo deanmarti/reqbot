@@ -1,6 +1,6 @@
 const getReqNew = () => {
   const answers = [
-    'A new request can be created in ATOS [Link](https://atos.applications.services.axa-tech.intraxa/de/catalogs/AXA_MEJCH/network) (internal network only). \n\nHope this helps.',
+    'A new Request can be created in ATOS, this internal [Link](https://atos.applications.services.axa-tech.intraxa/de/catalogs/AXA_MEJCH/network) brings you to our catalogue. \n\nHope this helps.',
   ]
   return Promise.resolve((answers))
   }

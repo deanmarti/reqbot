@@ -1,0 +1,19 @@
+Req;Requestor country;ReqType;ATOS Approved;Urgent;Assignee;Change number;Implementation Date;Change fully approved;Completion Date;Req Closed
+RQ0180977;UK;other;21.09.2016;No;Vivek singh;NA;;No;;No
+RQ0191223;CH;Swisscom-Proxy;04.11.2016;No;Bruno Schwarz;Basket for SSL ;;No;31.01.2017;No
+RQ0192709;CH;Swisscom-Proxy;14.11.2016;No;Bruno Schwarz;CHGZU0000020273;;No;;No
+RQ0193674;CH;Swisscom-Proxy;22.11.2016;No;;;;No;;No
+RQ0193773;CH;Swisscom-Proxy;22.11.2016;No;;;;No;;No
+RQ0193667;CH;FW;22.11.2016;No;Simon Hugentobler;;;No;;No
+RQ0194556;CH;Swisscom-Proxy;25.11.2016;No;;;;No;;No
+RQ0195266;CH;FW;29.11.2016;Yes;Simon Hugentobler;;30.11.2016;No;;No
+RQ0195240;CH;VPN;29.11.2016;Yes;Simon Hugentobler;C00444902;02.12.2016;No;02.12.2016;No
+RQ0195266;CH;FW;30.11.2016;No;Simon Hugentobler;C00445320 ;01.12.2016;No;;No
+RQ0195437;UK;FW;30.11.2016;No;Sakthivel S;C00448580;16.12.2016;No;;No
+RQ0195917;CH;FW;02.12.2016;No;Shalabh Tripathi;C00447873 ;14.12.2016;No;;No
+RQ0196816;CH;LB;07.12.2016;No;Simon Hugentobler;;17.12.2016;No;;No
+RQ0196969;CEE;FW;08.12.2016;No;Amarendra Manam;NA;;No;;No
+RQ0197255;CH;Proxy;12.12.2016;No;Chinthu James;;;No;;No
+RQ0197036;CH;LB;12.12.2016;No;Gnanasekar Palani;C00450639;06.01.2017;No;13.01.2017;No
+RQ0197630;CH;FW;13.12.2016;No;Shalabh Tripathi;;;No;;No
+RQ0197652;CH;FW;13.12.2016;Yes;Shalabh Tripathi;;;No;;No

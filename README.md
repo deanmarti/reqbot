@@ -7,7 +7,7 @@ Its written in Node.js, uses the Microsoft Bot Framework and Recast.ai (for Lang
 
 ## Contributors
 
-I used the following tutorial 'https://chatbotsmagazine.com/a-nodejs-chatbot-tutorial-part-1-a2abd1b1c715#.xkoxkhin4' as a starting point, credits also to the stackoverflow cumminity for their.
+I used the following tutorial 'https://chatbotsmagazine.com/a-nodejs-chatbot-tutorial-part-1-a2abd1b1c715#.xkoxkhin4' as a starting point, credits also to the stackoverflow community for their.
 
 ## Installation
 
@@ -47,14 +47,15 @@ npm run build
 npm run start
 ```
 
-* use ngrok or similar to run the endpoint (this deployment runs fine on a Azure Web App)
+* use ngrok or similar to run the endpoint (this deployment runs fine on a Azure Web App, see how to [here](https://docs.botframework.com/en-us/node/builder/guides/deploying-to-azure/) )
 ```
 ./ngrok http 8080
 ```
 
-## ToDo / please note
+## ToDo / Please note
 
 * Has quite a lot of hardcoded things
+* Error handling to be improved
 * Very specific for our usecase
 * Waterfall/dialogs not implemented
 * Text only, no cards/buttons

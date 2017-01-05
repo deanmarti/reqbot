@@ -4,7 +4,8 @@ const getReqStatus = (entity) => {
 
     var request = require('request');
     var enityraw = entity.raw
-    var request_number = enityraw.toLowerCase()//.match(/\d+/g)
+    var request_number_in = entity.toLowerCase().match(/\d+/g) 
+    var request_number = "rq"+request_number_in;
     var output = [];
     // console.log(request_number)
 
@@ -59,7 +60,7 @@ const getReqStatus = (entity) => {
                     output.push( `Your request ${jsonFromLine.req} was received on ${jsonFromLine.ATOS_approved} but is not yet scheduled for implementation. \n\nNormaly a such a request requires 10 working days, if you need it earlier please contact the Provisioning Team.`);
                 }}
             else {
-                output.push( `Your request ${jsonFromLine.req} was received on ${jsonFromLine.ATOS_approved}  and is scheduled for implementation on ${jsonFromLine.impl_date}. \n\nWould it be extremly urgent and have to be implemented earlier please contact ${jsonFromLine.assignee} who coordinates this request.`); 
+                output.push( `Your request ${jsonFromLine.req} was received on ${jsonFromLine.ATOS_approved} and is scheduled for implementation on ${jsonFromLine.impl_date}. \n\nWould it be extremly urgent and have to be implemented earlier please contact ${jsonFromLine.assignee} who coordinates this request.`); 
             }
         }
         else {

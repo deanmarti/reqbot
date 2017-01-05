@@ -4,8 +4,10 @@ const getReqStatus = (entity) => {
 
     var request = require('request');
     var enityraw = entity.raw
-    var request_number_in = entity.toLowerCase().match(/\d+/g) 
-    var request_number = "rq"+request_number_in;
+    var request_number_in = entity.toLowerCase()
+    // var request_number_in = entity.toLowerCase().match(/\d+/g) 
+    // var request_number = "rq"+request_number_in;
+    
     var output = [];
     // console.log(request_number)
 

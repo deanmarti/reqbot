@@ -3,8 +3,8 @@ const getReqStatus = (entity) => {
     return new Promise(function(resolve) {
 
     var request = require('request');
-    var enityraw = entity.raw
-    var request_number_in = entity.toLowerCase()
+    var enityraw = entity.value // .raw
+    var request_number = entity.toLowerCase()
     // var request_number_in = entity.toLowerCase().match(/\d+/g) 
     // var request_number = "rq"+request_number_in;
     

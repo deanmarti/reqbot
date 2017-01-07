@@ -74,7 +74,7 @@ const getReqStatus = (entity) => {
 
     lineReader.on('close', function (line) {
         if (output == '') {
-        output.push( `I was not able to find the Request ${request_number}. Please check your request number, should be something like RQ0123456`);
+        output.push( `I was not able to find the Request ${request_number}. Please check your request number, should be something like RQ0123456 (RQ + 7 digits)`);
         }
         console.log(`BotResp(reqstatus): ${output}`); // list output
          resolve(output);

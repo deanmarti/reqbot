@@ -16,7 +16,7 @@ const getReqStatus = (entity) => {
     Stream = require('stream').Transform,                                  
     fs = require('fs');                                                    
 
-    var url = 'http://beeforce.ch/reqbot/netreqs.csv';                    
+    var url = 'http://reqbotweb.azurewebsites.net/netreqs.csv';                    
 
     http.request(url, function(response) {                                        
         var data = new Stream();                                                    

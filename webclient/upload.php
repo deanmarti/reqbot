@@ -140,7 +140,7 @@ input[type="submit"]:active {
 		<br />
 		<!-- Multiple file upload html form-->
 		<form action="" method="post" enctype="multipart/form-data">
-			<input type="file" name="files[]" multiple="multiple" accept="image/*">
+			<input type="file" name="files[]" multiple="multiple" accept="file">
 			<input type="submit" value="Upload">
 		</form>
 </div>
